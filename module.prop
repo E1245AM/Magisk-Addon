@@ -1,6 +1,6 @@
 id=magisk-addon
-name=Magisk Addon Support
+name=Magisk Addon Support Fork
 version=v1
 versionCode=1
-author=yujincheng08, topjohnwu and osm0sis
+author=yujincheng08, E1245AM, topjohnwu and osm0sis
 description=Keep Magisk installed after OTA under addon.d supported ROMs.

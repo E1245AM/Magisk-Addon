@@ -15,8 +15,10 @@ if [ -d /system/addon.d ]; then
     mount -o remount,rw /
     REMOUNTED="/"
   fi
-  ADDOND=/system/addon.d/99-magisk.sh
-  cp -af $MODDIR/addon.d.sh $ADDOND
-  chmod 755 $ADDOND
+  ADDOND=/system/addon.d
+  cp -af $MODDIR/addon.d.sh $ADDOND/99-magisk.sh
+  cp -af /data/adb/magisk $ADDOND/magisk
+  chmod 755 $ADDOND/99-magisk.sh
+  chmod 755 $ADDOND/magisk
   [ -n "$REMOUNTED" ] && mount -o remount,ro $REMOUNTED || true
 fi

@@ -7,8 +7,8 @@
 #
 ########################################################
 
-# Always use the script in /data
-MAGISKBIN=/data/adb/magisk
+# Always use the script in /system
+MAGISKBIN=/system/addon.d/magisk
 V1_FUNCS=/tmp/backuptool.functions
 V2_FUNCS=/postinstall/tmp/backuptool.functions
 
